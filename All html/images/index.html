@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Monster longin page</title>
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.3) url("../images/login\ img.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+        }
+
+        .picture {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-direction:column;
+            /* align-items: center; */
+            justify-content: center;
+            width: 17rem;
+            padding: 20px; 
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            font-family: ui-rounded;
+            margin-bottom: 1.8rem;
+            border-radius: 3px;
+            border-bottom: 2px solid white;
+            font-size: 2.5rem;
+            width: 10rem;
+            margin-left: 1.3rem;
+            padding: 0 0px 1px 10px;
+        }
+
+        .box {
+           
+            margin: 10px 0;
+        }
+
+        .box i {
+            color: rgb(153, 152, 152);
+        }
+
+        input {
+            font-size: 1.1rem;
+            font-family: monospace;
+            background: none;
+            padding: 3px 5px;
+            color: white;
+            border: none;
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+            height: 20px;
+            width: 15rem;
+        }
+
+        .btn {
+            cursor: pointer;
+            width: 5rem;
+            background: none;
+            border: none;
+            color: white;
+            border-bottom: 2px solid white;
+            border-radius: 6px;
+            margin: 9px 0 0 9px;
+            padding: .3rem;
+            transition: all 400ms ease; 
+        }
+        .btn:hover{
+            background-color: blue;
+            border:1px solid white;
+        }
+
+
+        .picture img {
+            height: 20rem;
+        }
+
+        @media screen and (max-width: 1250px) {
+            body {
+                background-color: violet;
+            }
+
+           .picture img{
+               height:10rem;
+           }
+           
+        .container h1 {
+            font-size:1.1rem;
+            width: 5rem;
+
+        }
+        input{
+            width:10rem;
+            font-size: 0.9rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="picture"><img src="../images/arranging-files.svg" alt=""></div>
+        <div class="container">
+            <h1>Sing In</h1>
+            <div class="box">
+                <i class="uil uil-user-circle"></i>
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+                <div class="box">
+                    <i class="uil uil-key-skeleton"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+
+                </div>
+
+            </div>
+            <button class="btn">Sing In</button>
+        </div>
+    </header>
+</body>
+
+</html>
